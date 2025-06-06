@@ -50,6 +50,7 @@ public class WishlistService {
 
     public void deletar(Long id) {
         Wishlist wishlist = buscarPorId(id);
+        wishlistRepository.delete(wishlist);
     }
 
     public List<Wishlist> listarPorCliente(Long clienteId) {

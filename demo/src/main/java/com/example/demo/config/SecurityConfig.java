@@ -94,7 +94,7 @@ public class SecurityConfig {
 								.requestMatchers(HttpMethod.POST, "/listadedesejos/**").permitAll()
 								.requestMatchers(HttpMethod.GET, "/listadedesejos/**").permitAll()
 								.requestMatchers(HttpMethod.PUT, "/listadedesejos/**").permitAll()
-								.requestMatchers(HttpMethod.DELETE, "/listadedesejos/**").authenticated()
+								.requestMatchers(HttpMethod.DELETE, "/listadedesejos/**").permitAll()
 
 //						.requestMatchers(HttpMethod.GET, "/perfis/**").permitAll()
 //						.requestMatchers(HttpMethod.POST, "/produtos/**").permitAll()
